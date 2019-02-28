@@ -12,7 +12,7 @@ BOT_PREFIX = ('?', '!')
 
 
 class ChattyCathy:
-    def __init__(self, channel_name, bot_token):
+    def __init__(self, foxyvamp, cKvj66nEXkHQ1w5F7xz56GrDhEC9HPtH):
         self.channel_name = channel_name
         self.token = bot_token
 
@@ -34,10 +34,10 @@ class ChattyCathy:
         @self.discord_client.event
         @asyncio.coroutine
         def on_ready():
-            print("Bot Online!")
+            print("FoxyVamp Online!")
             print("Name: {}".format(self.discord_client.user.name))
             print("ID: {}".format(self.discord_client.user.id))
-            yield from self.discord_client.change_presence(game=discord.Game(name='Chatting with Humans'))
+            yield from self.discord_client.change_presence(listening=discord.game(name='Spotify'))
 
         @self.discord_client.event
         @asyncio.coroutine
